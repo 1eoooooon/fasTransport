@@ -1,0 +1,18 @@
+@use 'fonts' as *;
+
+/* base */
+$contentWidth: 1716px;
+
+/* fonts */
+$fontBold: "Montserrat", bold, sans-serif;
+$fontMedium: "Montserrat", medium, sans-serif;
+$fontSemibold: "Montserrat", semibold, sans-serif;
+
+/* colors */
+$successFormCircleColor: #00A91B;
+$errorColor: #FF6363;
+
+/* success circle */
+$successCircleRadius: 80;
+$PI: 3.14;
+$successCircleLength: calc(2 * $PI * $successCircleRadius);

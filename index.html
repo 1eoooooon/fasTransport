@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fastransport </title>
+  <link rel="stylesheet" href="/src/styles/styles.scss">
+  <link rel="stylesheet" href="/src/styles/media.scss">
+  <link rel="icon" type="image/png" href="src/img/svg/logo__header.svg">
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container flex header__container">
+    <div class="logo-block flex">
+      <a href="#" class="flex">
+        <picture>
+          <img src="/src/img/svg/logo__header.svg" alt="Logo">
+        </picture>
+        <p class="logo-name">
+          Fastransport 
+        </p>
+      </a>
+    </div>
+    <nav class="header__nav flex">
+      <ul class="header__nav-list flex">
+        <li>
+          <a data-string-id="header-nav-button-about-us" href="#about-us" class="header__nav-link"></a>
+        </li>
+        <li>
+          <a data-string-id="header-nav-button-services" href="#services" class="header__nav-link"></a>
+        </li>
+        <li>
+          <a data-string-id="header-nav-button-jobs" href="#working-conditions" class="header__nav-link"></a>
+        </li>
+        <li>
+          <a data-string-id="header-nav-button-contact" href="#footer" class="header__nav-link"></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__right-block flex">
+      <div class="header__lang">
+        <button class="header__lang-button">
+          <span class="header__lang-button-text">
+            EN
+          </span>
+          <svg class="header__lang-icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.75 4.60156L5.34627 1.33398C5.15279 1.14824 4.84722 1.14824 4.65373 1.33398L1.25 4.60156"
+                  stroke="#161C28" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="header__lang-dropdown-space">
+          <ul class="header__lang-dropdown">
+            <li>
+              <a href="#" class="header__lang-dropdown-link" data-lang-id="ru">RU</a>
+            </li>
+            <li>
+              <a href="#" class="header__lang-dropdown-link" data-lang-id="en">EN</a>
+            </li>
+            <li>
+              <a href="#" class="header__lang-dropdown-link" data-lang-id="ro">RO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button data-string-id="header-nav-button-order" class="header__order-button button-open-order-form"></button>
+      <div class="header__burger">
+        <button class="header__burger-button"></button>
+        <nav class="header__burger-nav">
+          <ul>
+            <li>
+              <a data-string-id="header-nav-button-about-us" href="#about-us" class="header__nav-link"></a>
+            </li>
+            <li>
+              <a data-string-id="header-nav-button-services" href="#services" class="header__nav-link"></a>
+            </li>
+            <li>
+              <a data-string-id="header-nav-button-jobs" href="#working-conditions" class="header__nav-link"></a>
+            </li>
+            <li>
+              <a data-string-id="header-nav-button-contact" href="#footer" class="header__nav-link"></a>
+            </li>
+          </ul>
+          <ul class="header__burger-social-block-list flex">
+            <li class="header__burger-social-block-list-item">
+              <a href="https://www.instagram.com/" class="header__burger-social-block-link" target="_blank"
+                 rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM9.26164 5.53867C9.94431 5.5076 10.1624 5.5 11.9006 5.5H11.8986C13.6373 5.5 13.8546 5.5076 14.5373 5.53867C15.2186 5.56987 15.684 5.67774 16.092 5.836C16.5133 5.99934 16.8693 6.21801 17.2253 6.57401C17.5813 6.92975 17.8 7.28682 17.964 7.70776C18.1213 8.11469 18.2293 8.57977 18.2613 9.26111C18.292 9.94378 18.3 10.1619 18.3 11.9001C18.3 13.6382 18.292 13.8558 18.2613 14.5385C18.2293 15.2196 18.1213 15.6848 17.964 16.0918C17.8 16.5126 17.5813 16.8697 17.2253 17.2255C16.8697 17.5815 16.5132 17.8007 16.0924 17.9641C15.6852 18.1224 15.2196 18.2303 14.5382 18.2615C13.8556 18.2925 13.6381 18.3001 11.8998 18.3001C10.1618 18.3001 9.94378 18.2925 9.26111 18.2615C8.5799 18.2303 8.11469 18.1224 7.70749 17.9641C7.28682 17.8007 6.92975 17.5815 6.57414 17.2255C6.21827 16.8697 5.99961 16.5126 5.836 16.0917C5.67787 15.6848 5.57 15.2197 5.53867 14.5384C5.50773 13.8557 5.5 13.6382 5.5 11.9001C5.5 10.1619 5.508 9.94365 5.53853 9.26097C5.5692 8.5799 5.6772 8.11469 5.83587 7.70762C5.99987 7.28682 6.21854 6.92975 6.57454 6.57401C6.93028 6.21814 7.28735 5.99947 7.70829 5.836C8.11523 5.67774 8.5803 5.56987 9.26164 5.53867Z"
+                        fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.4265 6.75355C11.538 6.75338 11.6579 6.75343 11.7873 6.75349L12.0006 6.75355C13.7094 6.75355 13.912 6.75969 14.5868 6.79035C15.2108 6.81889 15.5495 6.92315 15.7751 7.01076C16.0737 7.12676 16.2867 7.26543 16.5105 7.48943C16.7345 7.71343 16.8732 7.92677 16.9895 8.22544C17.0771 8.45077 17.1815 8.78944 17.2099 9.41345C17.2405 10.0881 17.2472 10.2908 17.2472 11.9988C17.2472 13.7068 17.2405 13.9095 17.2099 14.5842C17.1813 15.2082 17.0771 15.5468 16.9895 15.7722C16.8735 16.0709 16.7345 16.2835 16.5105 16.5074C16.2865 16.7314 16.0739 16.8701 15.7751 16.9861C15.5497 17.0741 15.2108 17.1781 14.5868 17.2066C13.9121 17.2373 13.7094 17.2439 12.0006 17.2439C10.2917 17.2439 10.0891 17.2373 9.41447 17.2066C8.79046 17.1778 8.45179 17.0735 8.22605 16.9859C7.92739 16.8699 7.71405 16.7313 7.49005 16.5073C7.26604 16.2833 7.12738 16.0705 7.01111 15.7716C6.92351 15.5463 6.81911 15.2076 6.79071 14.5836C6.76004 13.909 6.75391 13.7063 6.75391 11.9972C6.75391 10.2881 6.76004 10.0865 6.79071 9.41185C6.81924 8.78784 6.92351 8.44917 7.01111 8.22357C7.12711 7.9249 7.26604 7.71156 7.49005 7.48756C7.71405 7.26356 7.92739 7.12489 8.22605 7.00862C8.45166 6.92062 8.79046 6.81662 9.41447 6.78795C10.0049 6.76129 10.2337 6.75329 11.4265 6.75195V6.75355ZM15.4169 7.81623C14.9929 7.81623 14.6489 8.15983 14.6489 8.58397C14.6489 9.00798 14.9929 9.35198 15.4169 9.35198C15.8409 9.35198 16.1849 9.00798 16.1849 8.58397C16.1849 8.15997 15.8409 7.81596 15.4169 7.81596V7.81623ZM8.71393 12.0003C8.71393 10.1852 10.1855 8.71364 12.0005 8.71357C13.8156 8.71357 15.2868 10.1852 15.2868 12.0003C15.2868 13.8154 13.8157 15.2863 12.0006 15.2863C10.1855 15.2863 8.71393 13.8154 8.71393 12.0003Z"
+                        fill="white"/>
+                  <path
+                    d="M12.0005 9.8667C13.1787 9.8667 14.1339 10.8218 14.1339 12.0001C14.1339 13.1782 13.1787 14.1334 12.0005 14.1334C10.8223 14.1334 9.86719 13.1782 9.86719 12.0001C9.86719 10.8218 10.8223 9.8667 12.0005 9.8667Z"
+                    fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="header__burger-social-block-list-item">
+              <a href="https://www.facebook.com/" class="header__burger-social-block-link" target="_blank"
+                 rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_20_4922)">
+                    <path
+                      d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 17.9906 4.3875 22.9547 10.125 23.8547V15.4688H7.07812V12H10.125V9.35625C10.125 6.34922 11.9156 4.6875 14.6578 4.6875C15.9703 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8297C14.3391 7.875 13.875 8.80078 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8547C19.6125 22.9547 24 17.9906 24 12Z"
+                      fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_20_4922">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="header__burger-social-block-list-item">
+              <a href="https://www.linkedin.com/" class="header__burger-social-block-link" target="_blank"
+                 rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                    fill="white"/>
+                  <path class="linkedIn" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.65948 7.41135C8.65948 8.1959 8.06892 8.82367 7.12069 8.82367H7.10331C6.19033 8.82367 5.6001 8.1959 5.6001 7.41135C5.6001 6.6102 6.2083 6 7.13861 6C8.06892 6 8.64183 6.6102 8.65948 7.41135ZM8.48037 9.93892V18.1098H5.76091V9.93892H8.48037ZM18.2877 18.1098L18.2878 13.4249C18.2878 10.9151 16.9462 9.74706 15.1567 9.74706C13.7128 9.74706 13.0664 10.5401 12.7054 11.0965V9.93914H9.98565C10.0215 10.7059 9.98565 18.11 9.98565 18.11H12.7054V13.5467C12.7054 13.3025 12.7231 13.0589 12.795 12.8841C12.9915 12.3962 13.439 11.8911 14.1903 11.8911C15.1748 11.8911 15.5683 12.6404 15.5683 13.7384V18.1098H18.2877Z"
+                        fill="#161C28"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="order-form-submit-error">
+    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.9999 12.6001V23.1001" stroke="white" stroke-width="2.96552" stroke-linecap="round"/>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.9999 31.4998C22.1597 31.4998 23.0999 30.5596 23.0999 29.3998C23.0999 28.24 22.1597 27.2998 20.9999 27.2998C19.8401 27.2998 18.8999 28.24 18.8999 29.3998C18.8999 30.5596 19.8401 31.4998 20.9999 31.4998Z"
+            fill="white"/>
+      <path
+        d="M40.7026 21C40.7026 31.8814 31.8814 40.7026 21 40.7026C10.1186 40.7026 1.29741 31.8814 1.29741 21C1.29741 10.1186 10.1186 1.29741 21 1.29741C31.8814 1.29741 40.7026 10.1186 40.7026 21Z"
+        stroke="white" stroke-width="2.59483"/>
+    </svg>
+    <p data-string-id="order-form-submit-error" class="order-form-submit-error__text"></p>
+    <button class="order-form-submit-error__button">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M27.3767 29.4139L10.5852 12.5979C10.2027 12.2148 10.2287 11.5535 10.6426 11.139C11.0565 10.7246 11.7168 10.6985 12.0993 11.0815L28.8909 27.8976C29.2733 28.2806 29.2473 28.942 28.8335 29.3564C28.4196 29.7709 27.7592 29.7969 27.3767 29.4139Z"
+          fill="white"/>
+        <path
+          d="M29.4162 12.2169L12.6247 29.0329C12.2422 29.416 11.5818 29.3899 11.168 28.9755C10.7541 28.561 10.7281 27.8996 11.1105 27.5166L27.9021 10.7006C28.2846 10.3175 28.9449 10.3436 29.3588 10.7581C29.7727 11.1725 29.7987 11.8339 29.4162 12.2169Z"
+          fill="white"/>
+      </svg>
+    </button>
+  </div>
+  <div class="order flex">
+    <div class="order__form-body">
+      <button class="order__form-button-cancel">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M27.3767 29.4139L10.5852 12.5979C10.2027 12.2148 10.2287 11.5535 10.6426 11.139C11.0565 10.7246 11.7168 10.6985 12.0993 11.0815L28.8909 27.8976C29.2733 28.2806 29.2473 28.942 28.8335 29.3564C28.4196 29.7709 27.7592 29.7969 27.3767 29.4139Z"
+            fill="#1A2027"/>
+          <path
+            d="M29.4162 12.2169L12.6247 29.0329C12.2422 29.416 11.5818 29.3899 11.168 28.9755C10.7541 28.561 10.7281 27.8996 11.1105 27.5166L27.9021 10.7006C28.2846 10.3175 28.9449 10.3436 29.3588 10.7581C29.7727 11.1725 29.7987 11.8339 29.4162 12.2169Z"
+            fill="#1A2027"/>
+        </svg>
+      </button>
+      <h3 class="order__form-body-title" data-string-id="order-form-title"></h3>
+      <form name="orderForm" class="order__form" method="post" action="#" novalidate>
+        <div class="order__form-wrapper order__form-upload-location">
+          <label class="order__form-label" for="upload-location" data-string-id="order-form-upload-location"></label>
+          <input
+            class="order__form-input"
+            type="text" id="upload-location"
+            name="uploadLocation"
+            data-placeholder-string-id="order-form-loading-date-placeholder"
+            required>
+        </div>
+        <div class="order__form-wrapper order__form-unload-location">
+          <label class="order__form-label" for="unload-location" data-string-id="order-form-unload-location"></label>
+          <input
+            class="order__form-input"
+            type="text" id="unload-location"
+            name="unloadLocation"
+            data-placeholder-string-id="order-form-unloading-date-placeholder">
+        </div>
+        <div class="order__form-wrapper order__form-loading-date">
+          <label class="order__form-label" for="loading-date" data-string-id="order-form-loading-date"></label>
+          <input
+            class="order__form-input"
+            type="date" id="loading-date"
+            name="loadingDate"
+            data-placeholder-string-id="">
+        </div>
+        <div class="order__form-wrapper order__form-unloading-date">
+          <label class="order__form-label" for="unloading-date" data-string-id="order-form-unloading-date"></label>
+          <input
+            class="order__form-input"
+            type="date" id="unloading-date"
+            name="unloadingDate"
+            data-placeholder-string-id="">
+        </div>
+        <div class="order__form-wrapper order__form-weight">
+          <label class="order__form-label" for="weight" data-string-id="order-form-weight"></label>
+          <input
+            class="order__form-input"
+            type="number" id="weight"
+            name="weight"
+            data-placeholder-string-id="order-form-weight-placeholder">
+          <div class="order__form-input-unit" data-string-id="order-form-weight-unit"></div>
+        </div>
+        <div class="order__form-wrapper order__form-volume">
+          <label class="order__form-label" for="volume" data-string-id="order-form-volume"></label>
+          <input
+            class="order__form-input"
+            type="number" id="volume"
+            name="volume"
+            data-placeholder-string-id="order-form-volume-placeholder">
+          <div class="order__form-input-unit">м³</div>
+        </div>
+        <div class="order__form-wrapper order__form-type-of-transport">
+          <label class="order__form-label" data-string-id="order-form-type-of-transport-label"
+                 for="type-of-transport"></label>
+          <div class="order__form-type-of-transport-select" id="type-of-transport">
+            <div class="order__form-type-of-transport-select__header">
+              <div class="order__form-type-of-transport-select__current"
+                   data-string-id="order-form-type-of-transport-option-current"></div>
+              <div class="order__form-type-of-transport-select__icon">
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_23_1200)">
+                    <path
+                      d="M1.75 1.19775L6.55015 5.58647C6.80485 5.81933 7.19515 5.81933 7.44985 5.58647L12.25 1.19775"
+                      stroke="#161C28" stroke-width="2" stroke-linecap="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_23_1200">
+                      <rect width="8" height="14" fill="white" transform="translate(14) rotate(90)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="order__form-type-of-transport-select__body">
+              <div class="order__form-type-of-transport-select__item"
+                   data-value="order-form-type-of-transport-option-first"
+                   data-string-id="order-form-type-of-transport-option-first"></div>
+              <div class="order__form-type-of-transport-select__item"
+                   data-value="order-form-type-of-transport-option-second"
+                   data-string-id="order-form-type-of-transport-option-second"></div>
+            </div>
+            <input type="hidden" name="typeOfTransport" id="type-of-transport-input">
+          </div>
+        </div>
+        <div class="order__form-wrapper order__form-email">
+          <label class="order__form-label" for="email" data-string-id="order-form-email"></label>
+          <input
+            class="order__form-input"
+            type="email" id="email"
+            name="email"
+            data-placeholder-string-id="order-form-email-placeholder">
+          <p class="order__form-email-invalid" data-string-id="order-form-email-invalid"></p>
+        </div>
+        <div class="order__form-wrapper order__form-phone-number">
+          <label class="order__form-label" for="phone-number" data-string-id="order-form-phone-number"></label>
+          <input
+            class="order__form-input"
+            type="tel" id="phone-number"
+            name="phoneNumber"
+            data-placeholder-string-id="order-form-phone-number-placeholder">
+        </div>
+        <div class="order__form-wrapper order__form-additional-information">
+          <label class="order__form-label" for="additional-information"
+                 data-string-id="order-form-additional-information"></label>
+          <textarea
+            class="order__form-input order__form-input_message"
+            id="additional-information"
+            name="additionalInformation"
+            data-placeholder-string-id="order-form-additional-information-placeholder"
+            required></textarea>
+        </div>
+      </form>
+      <button class="order__form-button" type="button" data-string-id="order-form-button"></button>
+    </div>
+    <div class="order__form-success-body flex">
+      <button class="order__form-success-body-button-cancel">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M27.3765 29.4139L10.5849 12.5979C10.2025 12.2148 10.2285 11.5535 10.6424 11.139C11.0562 10.7246 11.7166 10.6985 12.0991 11.0815L28.8906 27.8976C29.2731 28.2806 29.2471 28.942 28.8332 29.3564C28.4193 29.7709 27.759 29.7969 27.3765 29.4139Z"
+            fill="#1A2027"/>
+          <path
+            d="M29.416 12.2174L12.6244 29.0334C12.2419 29.4165 11.5816 29.3904 11.1677 28.9759C10.7538 28.5615 10.7278 27.9001 11.1103 27.5171L27.9019 10.7011C28.2843 10.318 28.9447 10.3441 29.3586 10.7585C29.7724 11.173 29.7985 11.8344 29.416 12.2174Z"
+            fill="#1A2027"/>
+        </svg>
+      </button>
+      <h3 class="order__form-success-body-title" data-string-id="order-form-success-title"></h3>
+      <div class="order__form-success-body-image">
+        <svg width="100%" height="100%" viewBox="0 0 173 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="86.5" cy="86.5" r="78"/>
+          <path d="M128 57.9375L74.375 111.562L50 87.1875" stroke="url(#paint0_linear_23_2260)" stroke-width="10"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="paint0_linear_23_2260" x1="20" y1="87.1875" x2="2000" y2="57.9375"
+                            gradientUnits="userSpaceOnUse">
+              <animate attributeName="x2" values="100;2000" dur="11s" fill="freeze" begin="indefinite"/>
+              <stop offset="0" stop-color="#00A91B" stop-opacity="0">
+                <animate attributeName="stop-opacity" values="0;1" dur="2s" begin="indefinite" fill="freeze"/>
+                <animate attributeName="offset" values="0;1" dur="3s" begin="indefinite" fill="freeze"/>
+              </stop>
+              <stop offset="1" stop-color="#00A91B" stop-opacity="0">
+                <animate attributeName="offset" values="0;1" dur="2s" begin="indefinite" fill="freeze"/>
+              </stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <p class="order__form-success-body-description" data-string-id="order-form-success-description"></p>
+      <button class="order__form-success-body-button" data-string-id="order-form-success-button"></button>
+    </div>
+  </div>
+  <section class="title-banner">
+    <svg class="title-banner__bottom-frame" width="768" height="82" viewBox="0 0 768 82" fill="none"
+         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M768 82H0V0.870608C0.21055 0.942633 178.522 61.9185 384.8 61.9185C591.2 61.9185 768 0.870544 768 0.870544L768 82Z"
+            fill="white"/>
+    </svg>
+    <div class="container">
+      <div class="title-banner__content-block">
+        <h1 data-string-id="title-banner-title" class="title-banner__title"></h1>
+        <p data-string-id="title-banner-description" class="title-banner__description"></p>
+        <a href="#header">
+          <button data-string-id="title-banner-button" class="title-banner__button button-open-order-form"></button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="about-us" id="about-us">
+    <div class="container">
+      <div class="about-us__text-block flex">
+        <h3 data-string-id="about-us-title" class="about-us__title"></h3>
+        <p data-string-id="about-us-description" class="about-us__description"></p>
+      </div>
+      <div class="about-us__cards-block">
+        <div class="about-us__card about-us__card_1">
+          <picture class="about-us__card-picture">
+            <img src="/src/img/svg/about-us__card-image_1.svg" alt="picture 1">
+          </picture>
+          <h5 data-string-id="about-us-card-years-title" class="about-us__card-title"></h5>
+          <p data-string-id="about-us-card-years-description" class="about-us__card-description"></p>
+        </div>
+        <div class="about-us__card about-us__card_2">
+          <picture class="about-us__card-picture">
+            <img src="/src/img/svg/about-us__card-image_2.svg" alt="picture 2">
+          </picture>
+          <h5 data-string-id="about-us-card-trucks-title" class="about-us__card-title"></h5>
+          <p data-string-id="about-us-card-trucks-description" class="about-us__card-description"></p>
+        </div>
+        <div class="about-us__card about-us__card_3">
+          <picture class="about-us__card-picture">
+            <img src="/src/img/svg/about-us__card-image_3.svg" alt="picture 3">
+          </picture>
+          <h5 data-string-id="about-us-card-drivers-title" class="about-us__card-title"></h5>
+          <p data-string-id="about-us-card-drivers-description" class="about-us__card-description"></p>
+        </div>
+        <div class="about-us__card about-us__card_4">
+          <picture class="about-us__card-picture">
+            <img src="/src/img/svg/about-us__card-image_4.svg" alt="picture 4">
+          </picture>
+          <h5 data-string-id="about-us-card-countries-title" class="about-us__card-title"></h5>
+          <p data-string-id="about-us-card-countries-description" class="about-us__card-description"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__card-big flex">
+        <div class="services__card-big-text-block">
+          <h3 data-string-id="services-card-big-title" class="services__card-big-title"></h3>
+          <ul class="services__card-big-list">
+            <li class="services__card-big-item">
+              <p data-string-id="services-card-big-international-freight-transportation-bold"
+                 class="services__card-big-description"></p>
+              <p data-string-id="services-card-big-international-freight-transportation"
+                 class="services__card-big-description"></p>
+            </li>
+            <li class="services__card-big-item">
+              <p data-string-id="services-card-big-consolidated-cargo-delivery-bold"
+                 class="services__card-big-description"></p>
+              <p data-string-id="services-card-big-consolidated-cargo-delivery"
+                 class="services__card-big-description"></p>
+            </li>
+            <li class="services__card-big-item">
+              <p data-string-id="services-card-big-full-truckload-bold" class="services__card-big-description"></p>
+              <p data-string-id="services-card-big-full-truckload" class="services__card-big-description"></p>
+            </li>
+            <li class="services__card-big-item">
+              <p data-string-id="services-card-big-temperature-controlled-cargo-transportation-bold"
+                 class="services__card-big-description"></p>
+              <p data-string-id="services-card-big-temperature-controlled-cargo-transportation"
+                 class="services__card-big-description"></p>
+            </li>
+            <li class="services__card-big-item">
+              <p data-string-id="services-card-big-customs-clearance-bold" class="services__card-big-description"></p>
+              <p data-string-id="services-card-big-customs-clearance" class="services__card-big-description"></p>
+            </li>
+            <li class="services__card-big-item">
+              <p data-string-id="services-card-big-cargo-insurance-bold" class="services__card-big-description"></p>
+              <p data-string-id="services-card-big-cargo-insurance" class="services__card-big-description"></p>
+            </li>
+          </ul>
+        </div>
+        <picture class="services__card-big-picture">
+          <source srcset="src/img/services__card-big-picture_576.png" media="(max-width: 576px)">
+          <source srcset="src/img/services__card-big-picture_768.png" media="(max-width: 768px)">
+          <img src="/src/img/services__card-big-picture.png" alt="services picture">
+        </picture>
+      </div>
+      <div class="services__cards-block">
+        <div class="services__card services__card_1">
+          <picture class="services__card-picture">
+            <source srcset="src/img/services__card-picture_1_576.png" media="(max-width: 576px)">
+            <img src="/src/img/services__card-picture_1.png" alt="services picture 1">
+          </picture>
+          <div data-string-id="services-card-automotive-freight-transportation"
+               class="services__card-description"></div>
+        </div>
+        <div class="services__card services__card_2">
+          <picture class="services__card-picture">
+            <source srcset="src/img/services__card-picture_2_576.png" media="(max-width: 576px)">
+            <img src="/src/img/services__card-picture_2.png" alt="services picture 2">
+          </picture>
+          <div data-string-id="services-card-logistics-services" class="services__card-description"></div>
+        </div>
+        <div class="services__card services__card_3">
+          <picture class="services__card-picture">
+            <source srcset="/src/img/services__card-picture_3_576.png" media="(max-width: 576px)">
+            <img src="/src/img/services__card-picture_3.png" alt="services picture 3">
+          </picture>
+          <div data-string-id="services-card-warehousing-services" class="services__card-description"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="working-conditions" id="working-conditions">
+    <div class="container">
+      <div class="working-conditions__card flex">
+        <h3 data-string-id="working-conditions-title" class="working-conditions__title"></h3>
+        <p data-string-id="working-conditions-subtitle" class="working-conditions__subtitle"></p>
+        <ul>
+          <li data-string-id="working-conditions-modern-trucks" class="working-conditions__description">
+          </li>
+          <li data-string-id="working-conditions-salary" class="working-conditions__description">
+          </li>
+          <li data-string-id="working-conditions-routes-across-Europe" class="working-conditions__description">
+          </li>
+          <li data-string-id="working-conditions-flexible-schedule" class="working-conditions__description">
+          </li>
+          <li data-string-id="working-conditions-routes-based-Moldova" class="working-conditions__description">
+          </li>
+        </ul>
+        <a href="#header">
+          <button data-string-id="working-conditions-button-request"
+                  class="working-conditions__button button-open-order-form"></button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery__text-block">
+        <h3 data-string-id="gallery-title" class="gallery__title"></h3>
+        <p data-string-id="gallery-description" class="gallery__description"></p>
+        <div class="gallery__swiper-wrapper">
+              <div class="swiper-button-prev">
+                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                  <path
+                    d="M3.35248 6.99998C3.20998 6.99998 3.0675 6.9475 2.955 6.835L0.164978 4.04498C0.0599778 3.93998 -1.94762e-07 3.7975 -1.86416e-07 3.6475C-1.78071e-07 3.4975 0.0599779 3.35498 0.164978 3.24998L2.955 0.46C3.1725 0.2425 3.5325 0.2425 3.75 0.46C3.9675 0.6775 3.9675 1.0375 3.75 1.255L1.3575 3.6475L3.75 6.03996C3.9675 6.25746 3.9675 6.6175 3.75 6.835C3.645 6.9475 3.50248 6.99998 3.35248 6.99998Z"
+                    fill="#1A2027"/>
+                  <path
+                    d="M14.0625 4.20215L0.5625 4.20215C0.255 4.20215 -4.84036e-08 3.94715 -3.12954e-08 3.63965C-1.41872e-08 3.33215 0.255 3.07715 0.5625 3.07715L14.0625 3.07715C14.37 3.07715 14.625 3.33215 14.625 3.63965C14.625 3.94715 14.37 4.20215 14.0625 4.20215Z"
+                    fill="#1A2027"/>
+                </svg>
+              </div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/src/img/slider-image_1.jpg" alt="picture">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/src/img/slider-image_2.jpg" alt="picture">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/src/img/slider-image_3.jpg" alt="picture">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next">
+                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                  <path
+                    d="M11.6475 2.14549e-05C11.79 2.14753e-05 11.9325 0.0524998 12.045 0.165L14.835 2.95502C14.94 3.06002 15 3.2025 15 3.3525C15 3.5025 14.94 3.64502 14.835 3.75002L12.045 6.54C11.8275 6.7575 11.4675 6.7575 11.25 6.54C11.0325 6.3225 11.0325 5.9625 11.25 5.745L13.6425 3.3525L11.25 0.960043C11.0325 0.742543 11.0325 0.3825 11.25 0.164999C11.355 0.0524997 11.4975 2.14334e-05 11.6475 2.14549e-05Z"
+                    fill="#1A2027"/>
+                  <path
+                    d="M0.9375 2.79785L14.4375 2.79785C14.745 2.79785 15 3.05285 15 3.36035C15 3.66785 14.745 3.92285 14.4375 3.92285L0.9375 3.92285C0.63 3.92285 0.375 3.66785 0.375 3.36035C0.375 3.05285 0.63 2.79785 0.9375 2.79785Z"
+                    fill="#1A2027"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+</main>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__content-block flex">
+        <div class="footer__info-block flex">
+          <div class="footer__info-block-nav">
+            <div class="footer__logo-block">
+              <a href="#">
+                <picture>
+                  <img src="/src/img/svg/logo__footer.svg" alt="Logo">
+                </picture>
+                <p class="footer__logo-name">
+                  Fastransport 
+                </p>
+              </a>
+            </div>
+            <nav class="footer__nav flex">
+              <ul>
+                <li>
+                  <a data-string-id="header-nav-button-about-us" href="#about-us" class="footer__nav-link"></a>
+                </li>
+                <li>
+                  <a data-string-id="header-nav-button-services" href="#services" class="footer__nav-link"></a>
+                </li>
+                <li>
+                  <a data-string-id="header-nav-button-jobs" href="#working-conditions" class="footer__nav-link"></a>
+                </li>
+                <li>
+                  <a data-string-id="header-nav-button-contact" href="#footer" class="footer__nav-link"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a href="#header">
+            <button data-string-id="footer-button"
+                    class="footer__social-block-button-mobile button-open-order-form"></button>
+          </a>
+          <div class="footer__info-block-contacts flex">
+            <div class="footer__info-block-contacts-item">
+              <img src="/src/img/svg/footer__mail-icon.svg" alt="mail icon"
+                   class="footer__info-block-contacts-icon">
+              <a href="mailto:info@generallogistics.com">info@generallogistics.com</a>
+            </div>
+            <div class="footer__info-block-contacts-item">
+              <img src="/src/img/svg/footer__phone-icon.svg" alt="phone icon"
+                   class="footer__info-block-contacts-icon">
+              <a href="tel:+37367133780"> + 373 67 13 37 80</a>
+            </div>
+            <div class="footer__info-block-address__mobile">
+              <address>
+                <img src="/src/img/svg/footer__map-icon.svg" alt="phone icon"
+                     class="footer__info-block-address-icon">
+                <p data-string-id="footer-address"></p>
+              </address>
+            </div>
+          </div>
+          <div class="footer__info-block-address">
+            <address>
+              <img src="/src/img/svg/footer__map-icon.svg" alt="phone icon"
+                   class="footer__info-block-address-icon">
+              <p data-string-id="footer-address"></p>
+            </address>
+          </div>
+        </div>
+        <div class="footer__social-block">
+          <a href="#header">
+            <button data-string-id="footer-button" class="footer__social-block-button button-open-order-form"></button>
+          </a>
+          <ul class="footer__social-block-list flex">
+            <li class="footer__social-block-list-item">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM9.26164 5.53867C9.94431 5.5076 10.1624 5.5 11.9006 5.5H11.8986C13.6373 5.5 13.8546 5.5076 14.5373 5.53867C15.2186 5.56987 15.684 5.67774 16.092 5.836C16.5133 5.99934 16.8693 6.21801 17.2253 6.57401C17.5813 6.92975 17.8 7.28682 17.964 7.70776C18.1213 8.11469 18.2293 8.57977 18.2613 9.26111C18.292 9.94378 18.3 10.1619 18.3 11.9001C18.3 13.6382 18.292 13.8558 18.2613 14.5385C18.2293 15.2196 18.1213 15.6848 17.964 16.0918C17.8 16.5126 17.5813 16.8697 17.2253 17.2255C16.8697 17.5815 16.5132 17.8007 16.0924 17.9641C15.6852 18.1224 15.2196 18.2303 14.5382 18.2615C13.8556 18.2925 13.6381 18.3001 11.8998 18.3001C10.1618 18.3001 9.94378 18.2925 9.26111 18.2615C8.5799 18.2303 8.11469 18.1224 7.70749 17.9641C7.28682 17.8007 6.92975 17.5815 6.57414 17.2255C6.21827 16.8697 5.99961 16.5126 5.836 16.0917C5.67787 15.6848 5.57 15.2197 5.53867 14.5384C5.50773 13.8557 5.5 13.6382 5.5 11.9001C5.5 10.1619 5.508 9.94365 5.53853 9.26097C5.5692 8.5799 5.6772 8.11469 5.83587 7.70762C5.99987 7.28682 6.21854 6.92975 6.57454 6.57401C6.93028 6.21814 7.28735 5.99947 7.70829 5.836C8.11523 5.67774 8.5803 5.56987 9.26164 5.53867Z"
+                        fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.4265 6.75355C11.538 6.75338 11.6579 6.75343 11.7873 6.75349L12.0006 6.75355C13.7094 6.75355 13.912 6.75969 14.5868 6.79035C15.2108 6.81889 15.5495 6.92315 15.7751 7.01076C16.0737 7.12676 16.2867 7.26543 16.5105 7.48943C16.7345 7.71343 16.8732 7.92677 16.9895 8.22544C17.0771 8.45077 17.1815 8.78944 17.2099 9.41345C17.2405 10.0881 17.2472 10.2908 17.2472 11.9988C17.2472 13.7068 17.2405 13.9095 17.2099 14.5842C17.1813 15.2082 17.0771 15.5468 16.9895 15.7722C16.8735 16.0709 16.7345 16.2835 16.5105 16.5074C16.2865 16.7314 16.0739 16.8701 15.7751 16.9861C15.5497 17.0741 15.2108 17.1781 14.5868 17.2066C13.9121 17.2373 13.7094 17.2439 12.0006 17.2439C10.2917 17.2439 10.0891 17.2373 9.41447 17.2066C8.79046 17.1778 8.45179 17.0735 8.22605 16.9859C7.92739 16.8699 7.71405 16.7313 7.49005 16.5073C7.26604 16.2833 7.12738 16.0705 7.01111 15.7716C6.92351 15.5463 6.81911 15.2076 6.79071 14.5836C6.76004 13.909 6.75391 13.7063 6.75391 11.9972C6.75391 10.2881 6.76004 10.0865 6.79071 9.41185C6.81924 8.78784 6.92351 8.44917 7.01111 8.22357C7.12711 7.9249 7.26604 7.71156 7.49005 7.48756C7.71405 7.26356 7.92739 7.12489 8.22605 7.00862C8.45166 6.92062 8.79046 6.81662 9.41447 6.78795C10.0049 6.76129 10.2337 6.75329 11.4265 6.75195V6.75355ZM15.4169 7.81623C14.9929 7.81623 14.6489 8.15983 14.6489 8.58397C14.6489 9.00798 14.9929 9.35198 15.4169 9.35198C15.8409 9.35198 16.1849 9.00798 16.1849 8.58397C16.1849 8.15997 15.8409 7.81596 15.4169 7.81596V7.81623ZM8.71393 12.0003C8.71393 10.1852 10.1855 8.71364 12.0005 8.71357C13.8156 8.71357 15.2868 10.1852 15.2868 12.0003C15.2868 13.8154 13.8157 15.2863 12.0006 15.2863C10.1855 15.2863 8.71393 13.8154 8.71393 12.0003Z"
+                        fill="white"/>
+                  <path
+                    d="M12.0005 9.8667C13.1787 9.8667 14.1339 10.8218 14.1339 12.0001C14.1339 13.1782 13.1787 14.1334 12.0005 14.1334C10.8223 14.1334 9.86719 13.1782 9.86719 12.0001C9.86719 10.8218 10.8223 9.8667 12.0005 9.8667Z"
+                    fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-block-list-item">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 17.9906 4.3875 22.9547 10.125 23.8547V15.4688H7.07812V12H10.125V9.35625C10.125 6.34922 11.9156 4.6875 14.6578 4.6875C15.9703 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8297C14.3391 7.875 13.875 8.80078 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8547C19.6125 22.9547 24 17.9906 24 12Z"
+                    fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-block-list-item">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                    fill="white"/>
+                  <path class="footer__linkedIn" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.65948 7.41135C8.65948 8.1959 8.06892 8.82367 7.12069 8.82367H7.10331C6.19033 8.82367 5.6001 8.1959 5.6001 7.41135C5.6001 6.6102 6.2083 6 7.13861 6C8.06892 6 8.64183 6.6102 8.65948 7.41135ZM8.48037 9.93892V18.1098H5.76091V9.93892H8.48037ZM18.2877 18.1098L18.2878 13.4249C18.2878 10.9151 16.9462 9.74706 15.1567 9.74706C13.7128 9.74706 13.0664 10.5401 12.7054 11.0965V9.93914H9.98565C10.0215 10.7059 9.98565 18.11 9.98565 18.11H12.7054V13.5467C12.7054 13.3025 12.7231 13.0589 12.795 12.8841C12.9915 12.3962 13.439 11.8911 14.1903 11.8911C15.1748 11.8911 15.5683 12.6404 15.5683 13.7384V18.1098H18.2877Z"
+                        fill="#161C28"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="module" src="/src/js/index.js"></script>
+</body>
+</html>
